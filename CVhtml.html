@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<head>
+		<meta charset="utf-8">
+		<title>CV TECHER Nathan</title>
+		<link rel="icon" type="image/png" href="popi noir et blenc150.png">
+</head>
+
+
+<body style="background-color:white; color:black; font-size:18px; margin: 0 50px 50px;">
+  
+	<h1 style="margin: 30px 200px 30px;">TECHER Nathan</h1>
+	<p style="color:gray; font-size:14px; margin: 0px 0px 0px;">Ce document est interactif, vous pouvez survoler ou cliquer sur les textes marrons pour voir plus de détails <span onclick="this.title='Cliqué ✔';" style="font-size:22px;" class="interact" title="Survolé ✔" ><strong>👆</strong></span></p>
+  
+	
+	<style>
+		
+		.interact
+		{
+			cursor: pointer;
+			color: #905000;
+		}
+		
+		.deroul
+		{
+			cursor: pointer;
+			color: #905000;
+			position: relative;
+			display: inline-block;
+		}
+
+		.plusinfo
+		{
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.6s ease;
+			margin-left: 10px;
+			color: black;
+			cursor: default;
+		}
+		
+		.pluslonginfo
+		{
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 1.2s ease;
+			margin-left: 10px;
+			color: black;
+			cursor: default;
+		}
+		
+		.image
+		{
+			position: absolute;
+			top: 10px;
+			left: 395px;
+			margin-left:10px;
+			display:none;
+			color: black;
+			cursor: default;
+		}
+
+		.fermer
+		{
+			position: absolute;
+			top: 5px;
+			right: 7px;
+			cursor: pointer;
+			color: red;
+			font-weight: bold;
+			font-family: "Gill Sans Extrabold", sans-serif;
+		}
+
+		.deroul:hover > .plusinfo{max-height: 150px;}
+		
+		.deroul.ouvert > .plusinfo{overflow: visible;}
+		
+		.deroul:hover > .pluslonginfo{max-height: 450px;}
+		
+		.deroul.ouvert > .pluslonginfo{overflow: visible;}
+		
+		.deroul.ouvert > .image{display:block;}
+		
+	</style>
+	
+  
+	<div style="
+		position: absolute;
+		top: 30px;
+		left: 700px;
+		width: 310px;
+		height: 180px;
+		background-color: rgba(220,215,200,0.7);
+		border: 2px solid gray;
+		box-sizing: border-box;
+		padding: 1px 10px;
+		line-height: 1.5;
+	">
+		<h2 class="interact" style="margin: 5px;" title="Cliquez pour copier les coordonnées" onclick="navigator.clipboard.writeText('TECHER Nathan \nTéléphone: 0748256709 \nAdresse: 12 rue des Peupliers Villa Rosa n°2 83400 Hyères \nEmail: techernathan0000@gmail.com'); this.title='copié ✔';">Coordonnées:</h2>
+		<strong>Téléphone:</strong> 0748256709<br>
+		<strong>Adresse:</strong> 12 rue des Peupliers Villa Rosa n°2 83400 Hyères<br>
+		<strong>Email:</strong> <a class="interact" href="mailto: techernathan0000@gmail.com" title="Cliquez pour directement m'envoyer un email (ne marche que si vous avez une application d'email installé)">techernathan0000@gmail.com</a>
+	
+	</div>
+  
+
+  <div style="margin: 20px;">
+
+	<h2 style="margin: 5px -20px;">Diplôme <span style="font-size: 22px;">&</span> expérience professionnelle:</h2>
+	- brevet des collèges<br>
+	- ASSR 2<br>
+	- stage de collège au centre auto Feu Vert de Hyères<br>
+	
+	<br>
+	
+	<h2 style="margin: 5px -20px;">Compétences:</h2>
+		<h3 style="margin: 5px 0px 0px 0px;">- Fabrication et réparation</h3>
+		<div style="margin-left: 25px;">
+			
+			<strong>- Réparation</strong><br>
+			<div style="margin-left: 25px;">
+				
+				<div class="deroul" onclick="this.classList.toggle('ouvert');">- mécanique auto<br>
+				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- diagnostic et réparation de toute panne <em>(hors OBD)</em>
+					
+						<div class="image" onclick="event.stopPropagation();" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/14yOxZvmLlL8svcmelJH0WH62KOmSIbZN/preview" width="480" height="360"></iframe><br>
+							Photos prises durant mon premier changement d'embrayage,<br>
+							sans l'aide de personne ni internet ni même les outils adaptés,<br>
+							et à seulement 12ans.
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert');">X</div>
+						</div>	
+					</div><br>
+					
+				</div>
+				</div><br>
+				<div class="deroul" onclick="this.classList.toggle('ouvert');">- plomberie<br>
+				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+					
+					réparation de fuite,<br>remplacement de tuyau robinetterie joint,<br>
+					débouchage de canalisation,<br>installation de mécanisme de chasse d'eau,<br>exetera.
+					
+				</div>
+				</div><br>
+				<div class="deroul" onclick="this.classList.toggle('ouvert');">- électroménager<br>
+				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- diagnostic et réparation de la majorité des pannes
+					
+						<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/10LUIMO3X2-ZshqMdSSE5-moz_ixw2Zjl/preview" width="480" height="360"></iframe><br>
+							Par exemple cette grande télévision incurvé n'affichent plus d'image,
+							<iframe src="https://drive.google.com/file/d/1-Qgrcwp65w4IShKcjpvD6BgRLw31Sjso/preview" width="480" height="360"></iframe><br>
+							j'ai déterminé que le problème venait du rétroéclairage,
+							<iframe src="https://drive.google.com/file/d/14XwbyLw6Dc9lhf43ZuDah65k4-lTyDh-/preview" width="480" height="360"></iframe><br>
+							plus précisément d'une led grillée,
+							<iframe src="https://drive.google.com/file/d/1dO42032vTSfR9f3dOLipKJHzyNODe6_c/preview" width="480" height="360"></iframe><br>
+							je l'ais réparer remonter et la voilà fonctionnelle.
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+						</div>	
+					</div><br>
+				</div>
+				</div><br>
+				- matériel audio <em>(analogique)</em><br>
+				<div class="deroul" onclick="this.classList.toggle('ouvert');">- électricité<br>
+				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+					
+					remplacement d'interrupteur prise installation d'équipements électriques, exetera.
+					
+				</div>
+				</div><br>
+				- meuble<br>
+				<div class="deroul" onclick="this.classList.toggle('ouvert');">- informatique <em>(hardware)</em><br>
+				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+					
+					- amélioration tour et ordi portable<br>
+					- diagnostic et réparation: tour, ordi portable, imprimante, téléphone, etc<br>
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">exemple
+					
+						<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/127JKBjPISRNqNOGyoAZZdd2gXjWc8b9M/preview" width="480" height="360"></iframe><br>
+							Photos prise durant le diagnostic d'une carte mère ne réagissant plus au signal PG.<br>
+						</div>	
+					</div><br>
+					- sélection et assemblage des composants de tour d'ordinateur<br>
+				</div>
+				</div><br>
+			</div>
+			
+			<strong>- Conception et fabrication</strong><br>
+			<div style="margin-left: 25px;">
+				<div class="deroul" onclick="this.classList.toggle('ouvert');">- électricité<br>
+				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- électromagnétique
+					
+						<div class="image" onclick="event.stopPropagation();" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/1l3s6ngAsf66G9cBRKMx9F9g32I7dfLzN/preview" width="480" height="360"></iframe><br>
+							Par exemple la abrication d'un transformateur sur mesure 17V 50A 
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert');">X</div>
+						</div>	
+					</div><br>
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- électronique
+					
+						<div class="image" onclick="event.stopPropagation();" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/10hjOmJ95nTHsf6JLvxswoaEHByiqsXIy/preview" width="480" height="360"></iframe><br>
+							Conception d'un circuit imprimé<br>
+							<iframe src="https://drive.google.com/file/d/1T4pCiPMGS_wWwHjZyCSqOqVSpzbRR9JX/preview" width="480" height="360"></iframe><br>
+							et la fabrication de ce dernier
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert');">X</div>
+						</div>	
+					</div><br>
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- électromécanique
+					
+						<div class="image" onclick="event.stopPropagation();" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/1mCIp19xOXBUZTvdYNlDF5LfpeTMoo07g/preview" width="480" height="450"></iframe><br>
+							Voici un vélo électrique que j'ai fait à 13ans <em>(donc bien avant la mode des vélos électriques)</em>,<br>qui à part les tubes pour la fabrication du cadre et le tissu en guise de carrosserie est fait à base de récuperation.<br>
+							Et il a plein d'options: clignotant, far, feux stop, klaxon, rétroviseur, radio cd quadraphonic, compteur de vitesse, horloge de bord, clé de contacte, 12vitesse, freinage régénératif, et 1,4ch pour 60kg.
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert');">X</div>
+						</div>	
+					</div><br>
+					<div onclick="event.stopPropagation()">- autre sous-domaine de l'électricité</div>
+				</div>
+				</div><br>
+				<div class="deroul" onclick="this.classList.toggle('ouvert');">- métallurgie<br>
+				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+					
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- conception et fabrication de pièces
+						<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/1aKDIEBTU4AytouuJ2a0fBCMvTSStTWvj/preview" width="480" height="342"></iframe><br>
+							Calcul de la forme optimale d'un plateau ovale pour mon vélo selon une courbe de relevé de force de mes jambes<br>
+							<iframe src="https://drive.google.com/file/d/1__8KR5b2eLYna90E45plZEpaUtltMs5k/preview" width="480" height="360"></iframe><br>
+							<iframe src="https://drive.google.com/file/d/1UnAgmqIUE3s5gqCY-ZzQpBQcdexq9zCv/preview" width="480" height="360"></iframe><br>
+							et fabrication de ce dernier à base de tôle de bouteille de gaz
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+						</div>	
+					</div><br>
+					
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- soudure <em>(baguette)</em>
+						<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/1y9cNBP5ZpPNxVbzZxPF0Tnl1WybZQC8m/preview" width="480" height="326"></iframe><br>
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+						</div>	
+					</div><br>
+					
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- brasure au bronze
+						<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/15I6bN56ctmCszaUev0DAj7-Dcw6NTPkf/preview" width="480" height="360"></iframe><br>
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+						</div>	
+					</div><br>
+					
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- forgeage <em>(léger)</em>
+						<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/1FnoW9tN1Owagt4OkBC3nXqj8C15ONnw4/preview" width="480" height="360"></iframe><br>
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+						</div>	
+					</div><br>
+					
+				</div>
+				</div><br>
+				<div class="deroul" onclick="this.classList.toggle('ouvert');">- chimie <em>(simple)</em>
+				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- synthèse de diverses composants
+					
+						<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/18HiEIPdGZ9mMEXWEFuy-GX9iYP4iSdxd/preview" width="480" height="360"></iframe><br>
+							Par exemple générer de l'acétate de cuivre par hydrolyse d'acide acétique avec une électrode en cuivre
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+						</div>	
+					</div><br>
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- et utilisation
+					
+						<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/1M8UmjGgnr04M8JL847I_uIKzXC56mdZV/preview" width="480" height="360"></iframe><br>
+							Se laver avec ce savon liquide très efficace que j'ai fait a 17ans <em>(d'où le tartre)</em>
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+						</div>	
+					</div><br>
+				</div>
+				</div><br>
+				<div class="deroul" onclick="this.classList.toggle('ouvert')">- couture
+					
+					<div class="image" onclick="event.stopPropagation()" style="margin-left: 10px;">
+						<iframe src="https://drive.google.com/file/d/1Jee0cApy7aQSO4hzuLPfspMIOvv-dC4H/preview" width="480" height="360"></iframe><br>
+						<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+					</div>	
+				</div><br>
+				- menuiserie<br>
+				<div class="deroul" onclick="this.classList.toggle('ouvert')">- mécanisme divers
+					
+					<div class="image" onclick="event.stopPropagation()" style="margin-left: 10px;">
+						<iframe src="https://drive.google.com/file/d/1iDrKa3Dx8JveOfi0K3xlI1tx8SGck2gD/preview" width="480" height="360"></iframe><br>
+						Voici une image de la conception pour un ami d'un mécanisme visant à incrémenter une roue avec un levier et multiplier par 3,35 l'angle de rotation, mais contrairement à n'importe quel cliquet celui-ci marche dans les deux sens,<br>
+						<iframe src="https://drive.google.com/file/d/1Yk1kMKDKHvR2zBgUQhN6ty1Mt4Ae1UpE/preview" width="480" height="360"></iframe><br>
+						et en voici un prototype plastique pour confirmer qu'il fonctionne bel et bien dans la réalité et pas seulement dans ma tête.<br>
+						<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+					</div>	
+				</div><br>
+				
+				<div class="deroul" onclick="this.classList.toggle('ouvert')">- poterie
+					
+					<div class="image" onclick="event.stopPropagation()" style="margin-left: 10px;">
+						<iframe src="https://drive.google.com/file/d/1o6mBiRpyrxRxGcEEb1WFajQ_Y4pCNoRJ/preview" width="480" height="360"></iframe><br>
+						Photo prise à 13ans durant la création pour quelqu'un d'une sculpture en argile d'une tortue dans un style cartoonesque<br>
+						<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+					</div>	
+				</div><br>
+				
+			</div>
+			
+		</div>
+		<h3 style="margin: 5px 0px 0px 0px;">- Informatique <em>(software)</em></h3>
+		<div style="margin-left: 25px;">
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- Diagnostic et résolution de problème</strong><br>
+				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+					- résolution de diverses problèmes, que ce soit<br>
+					compatibilité logiciel et drivers<br>
+					logiciel indésirable<br>
+					problème de performance<br>
+					mauvaise configuration d'os<em>(Windows NT)</em> BIOS/UEFI ou logiciel<br>
+					exetera<br>
+				</div>
+			</div><br>
+			
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- Administration</strong><br>
+				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+					- installation d'os adapté à l'utilisation<br>
+					- rechercher et installation de driver spécifique<br>
+					- configuration diverses<br>
+					- ouverture et gestion de serveur IIS NAS ou autre<br>
+					- installation de logiciel<br>
+					- gestion de disque<br>
+					- exetera<br>
+				</div>
+			</div><br>
+			
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- Développement logiciel</strong><br>
+				<div  class="pluslonginfo" style="margin-left: 25px; margin-bottom: -5px;">
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- script<br>
+						<div  class="pluslonginfo" style="margin-left: 25px; margin-bottom: -5px;">
+							<div onclick="event.stopPropagation()">langage de programmation utilisé, par ordre de compétence:</div>
+							<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- C#
+							
+								<div class="image" onclick="event.stopPropagation()" style="margin-left:-75px;">
+									<div style="overflow:hidden; width:540px; height:480px; border: 2px solid gray;">
+										<iframe src="https://drive.google.com/file/d/1ZaPyKXyMuMiOGkYGbYvbWoLU_ZROCNYP/preview" width="1147" height="984" style="margin-left:-13px; margin-top:-4px; transform:scale(0.5); transform-origin:0 0;"></iframe><br>
+										<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+									</div>
+									Script issu d'un mod Besiege que je fais en ce moment, le rôle de ce script est de charger durant le runtime des textures et mesh, avec un système de cache pour optimiser la vitesse de chargement, puis d'appliquer ses textures et mesh au GameObject souhaité.
+								</div>	
+							</div><br>
+							<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- batch
+							
+								<div class="image" onclick="event.stopPropagation()" style="margin-left:-75px;">
+									<div style="overflow:hidden; width:540px; height:480px; border: 2px solid gray;">
+										<iframe src="https://drive.google.com/file/d/1mYw2CuOt-f3NoHa10nk6iajP-xRQbIAX/preview" width="1147" height="984" style="margin-left:-13px; margin-top:-4px; transform:scale(0.5); transform-origin:0 0;"></iframe><br>
+										<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+									</div>
+									L'un de mes premiers programme, fait à 16ans seulement quelques mois après avoir eu mon premier ordinateur, il vise à surveiller et si besoin réguler l'utilisation de la RAM
+								</div>		
+							</div><br>
+							<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- JavaScript <em>(orienté unity)</em>
+							
+								<div class="image" onclick="event.stopPropagation()" style="margin-left:-75px;">
+									<div style="overflow:hidden; width:540px; height:406px; border: 2px solid gray;">
+										<iframe src="https://drive.google.com/file/d/1-IG-UUPJKVCE-sxzmr7BSLPLp6VP9A-T/preview" width="590" height="425" style="margin-left:-20px; margin-top:-4px;"></iframe><br>
+										<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+									</div>
+									Petit script visant à activer la version dynamique d'un GameObject lorsque l'on en est proche.
+								</div>		
+							</div><br>
+							<div onclick="event.stopPropagation()">- Xml / quelques langages propriétaires</div>
+							
+							<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- Html
+							
+								<div class="image" onclick="event.stopPropagation()" style="margin-left:-75px;">
+									<div style="overflow:hidden; width:540px; height:480px; border: 2px solid gray;">
+										<iframe src="https://drive.google.com/file/d/1yS1gYoObBYUncKgN8YqOnMguFDeMk0i-/preview" width="1147" height="984" style="margin-left:-13px; margin-top:-4px; transform:scale(0.5); transform-origin:0 0;"></iframe><br>
+										<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+									</div>
+									Ce CV en html que vous consultez actuellement.
+								</div>		
+							</div><br>
+							
+							<div onclick="event.stopPropagation()">- Hta</div>
+							
+							<div onclick="event.stopPropagation()">- Css</div>
+							
+							<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- Php / Sql
+							
+								<div class="image" onclick="event.stopPropagation()" style="margin-left:-75px;">
+									<div style="overflow:hidden; width:540px; height:480px; border: 2px solid gray;">
+										<iframe src="https://drive.google.com/file/d/1XqQ9dhORpeesuJuFCBipZaI0CFWYaqct/preview" width="590" height="498" style="margin-left:-20px; margin-top:-4px;"></iframe><br>
+										<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+									</div>
+									Petit script utilisé lors de connexion de l'un de mes logiciels.
+								</div>	
+							</div><br>
+							
+							<div onclick="event.stopPropagation()">- JavaScript <em>(web)</em></div>
+							
+						</div>
+					</div><br> 
+					
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- modèle 3D
+						<div  class="pluslonginfo" style="margin-left: 25px; margin-bottom: -5px;">
+						<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- modélisation
+					
+							<div class="image" onclick="event.stopPropagation()" style="margin-left:-15px;">
+								<div style="overflow:hidden; width:480px; height:360px; border: 2px solid gray;">
+									<iframe src="https://drive.google.com/file/d/1sxr6K07HzA4f1QxqMGc_SQoLTGAkouXm/preview" width="720" height="480" style="margin-left:-130px; margin-top:-90px;"></iframe><br>
+									<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+								</div>
+							</div>
+						</div><br>
+						<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- photogrammétrie
+					
+							<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
+								<iframe src="https://drive.google.com/file/d/1DvLFsgNjwpvabEqdVCe_aLjwK4PjwPNX/preview" width="480" height="360"></iframe><br>
+								
+								<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+							</div>	
+						</div><br>
+						<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- traitement de mesh
+					
+							<div class="image" onclick="event.stopPropagation()" style="margin-left: -75px;">
+								<iframe src="https://drive.google.com/file/d/1lZGbPFnZUKllSIr8ofA1__kP_ELDgTm-/preview" width="540" height="330"></iframe><br>
+								Images avant et après du nettoyage que j'ai effectué d'un scan fait par un ami avec son smartphone 
+								<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+							</div>	
+						</div><br>
+						
+						</div>
+					</div><br>
+					
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- texture
+					
+						<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
+							<iframe src="/preview" width="480" height="360"></iframe><br>
+							
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+						</div>	
+					</div><br>
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- physique
+						<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+						<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- rigidbody
+						
+							<div class="image" onclick="event.stopPropagation()" style="margin-left:-15px;">
+								<div style="overflow:hidden; width:480px; height:480px; border: 2px solid gray;">
+									<iframe src="/preview" width="800" height="640" style="margin-left:-160px; margin-top:-100px;"></iframe><br>
+									<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+								</div>
+								.
+							</div>
+						</div><br>
+						
+						<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- softbody
+						
+							<div class="image" onclick="event.stopPropagation()" style="margin-left:-15px;">
+								<div style="overflow:hidden; width:480px; height:480px; border: 2px solid gray;">
+									<iframe src="https://drive.google.com/file/d/1B4ZB1cERWLf7ZIQOo99hVd2xGUp0miKN/preview" width="800" height="640" style="margin-left:-160px; margin-top:-100px;"></iframe><br>
+									<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+								</div>
+								Gif de démonstration de la déformation plastique et inertie d'un pneus avec un moteur physique de softbody de ma création.
+							</div>
+						</div><br>
+						
+						</div>
+					</div><br>
+					
+					
+				</div>
+			</div><br>
+			
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- Modding</strong><br>
+				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+					
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- modification d'os <em>(Windows NT)</em>
+						<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+						- extension d'API<br>
+						- modification de registre<br>
+						- custom imageres.dll<br>
+						- autounattend<br>
+						- modification d'ISO<br>
+						- exetera<br>
+						
+						</div>
+					</div><br>
+					
+					
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- modification de logiciel
+						<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+						- ajout de compatibilité os ou driver<br>
+						- création de mod ou extension<br>
+						- modification du logiciel en lui-même<br>
+						- exetera<br>
+						
+						</div>
+					</div><br>
+					
+				</div>
+			</div><br>
+			
+		</div>
+		<h3 style="margin: 5px 0px 0px 0px;">- Autres compétences</h3>
+		<div style="margin-left: 25px;">
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- apprendre très vite</strong><br>
+				<div class="image" onclick="event.stopPropagation()" style="margin-left:-25px; margin-top:-150px;">
+					Par exemple j'avais besoin pour gérer une alimentation ATX faisant également UPS et parasurtenseurs d'un circuit électronique avec de la logique, ne connaissant que de loin les transistors un ami devait s'en charger mais face à la complexité de la demande s'est désisté.<br>
+					J'ai donc en seulement 2h appris le fonctionnement détaillé des transistors, le composant principal de mon circuit, puis en seulement 6h j'ai conçu tout ce circuit, et sans microcontrôleur ne voulant pas qu'il puisse buggé.
+					<iframe src="https://drive.google.com/file/d/1KRZIk-zEbKAfn5WC6hp7h_EadjuszijC/preview" width="540" height="674"></iframe><br>
+					Et si vous voulez plus de détails sur ce circuit:<br>
+					<br>
+					voici toutes les fonctionnalités<br>
+					<iframe src="https://drive.google.com/file/d/1QhrVhV4wdLYCbFci18WekgMGiyijgr7_/preview" width="540" height="610"></iframe><br>
+					Puis le schéma PCB, principalement réalisé par l'ami précédemment cité, mais il a fait de multiples erreurs que j'ai dû corriger<br>
+					<iframe src="https://drive.google.com/file/d/1EN9NTkX7ODiO9rejI9Om_-AaB-qOY8TD/preview" width="540" height="406"></iframe><br>
+					Et le voilà une fois imprimé avec JLCPCB<br>
+					<iframe src="https://drive.google.com/file/d/1cRu-wwZ_8ILf19Cv2si3HG2IK_1oT_cV/preview" width="540" height="405"></iframe><br>
+					<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
+				</div>	
+			</div><br>
+			
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- anglais</strong><br>
+				<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;" >
+					- I can read and write English as easily as French,<br>
+					- understand spoken english without any effort,<br>
+					- and despite not being capable of any trace of English accent<br>
+					I can speak English in a surprisingly totally understandable way for English speakers.<br>
+				</div>	
+			</div><br>
+			
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- mathématiques</strong><br>
+				<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;" >
+					- les calcul nécessaire pour trouver un résultat à un problème concret sont pour moi intuitif. <br>
+				</div>	
+			</div><br>
+			
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- encyclopédie humaine</strong><br>
+				<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;" >
+					- Je possède comme vous pouvez vous en douter si vous avez passé en revue tous mon CV,<br>
+					de vaste connaissances dans tous les domaines scientifiques concernant les objet qui nous entoure,<br>
+					science des matériaux, physique, chimie, mécanique des fluides, exetera,<br>
+					mais j'ai également des connaissances relativement vaste dans tous ceux concernant le monde qui nous entoure,<br>
+					astrophysique, mécanique quantique, biologie, médecine, exetera.<br>
+				</div>	
+			</div><br>
+			
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- assistance</strong><br>
+				<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;" >
+					- J'ais très régulièrement l'occasion d'aider généralement à distance des gens à réparer quelque chose<br>
+					ou régler diverses problèmes nécessitant mes capacités,<br>
+					j'aime beaucoup aider les gens, et j'y suis plutôt doué.<br>
+				</div>	
+			</div><br>
+			
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- précision chirurgicale</strong><br>
+				<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;" >
+					- je peux sans trop de difficultés faire des choses très précise<br>
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">exemple
+					
+						<div class="image" onclick="event.stopPropagation();" style="margin-left: -15px;">
+							<iframe src="https://drive.google.com/file/d/1pZkEHXlja3c3danglJAFl5_lE6g9edgk/preview" width="480" height="360"></iframe><br>
+							voici le résultat la première fois que j'ai essayé de graver de l'écriture sur un grain de riz,<br>
+							je tiens à préciser que de par la taille et translucidité du grain de riz
+							lorsque je tenais entre mes doigts je ne voyais pas vraiment ce que je faisais,
+							mais malgré ça c'est pas moins bien écrit qu'à taille normale.<br>
+							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert');">X</div>
+						</div>	
+					</div><br>
+				</div>	
+			</div><br>
+			
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- force physique</strong><br>
+				<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;" >
+					- Je peux facilement porter des charges lourdes, ou autres activités nécessitant de la force<br>
+				</div>	
+			</div><br>
+			
+		</div>
+	<br>
+	
+	
+	<h2 style="margin: 5px -20px;">profil:</h2>
+		<div style="margin-left: 25px;">
+			
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- surdoué autiste asperger</strong><br>
+				<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;" >
+					- En résumé mon cerveau est branché différemment d'une manière qui fait que:<br>
+					je suis très fort en sciences et toutes choses nécessitant un raisonnement logique,<br>
+					mais nul en interaction sociale et écriture,<br>
+					- QI mesurer à 141 à l'âge de 10ans<br>
+				</div>	
+			</div><br>
+	
+			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- dyslexique dysgraphique dysorthographique</strong><br>
+				<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;" >
+					- en résumé j'écris très mal surtout en écriture manuscrite, et je lis et écris lentement<br>
+				</div>	
+			</div><br>
+	
+			- perfectionniste<br>
+	
+			- 25ans <em>(née le 20 juin 2001)</em>
+			
+	
+	
+	
+		</div>
+		
+		
+		
+
+
+	
+	
+  </div>
+	
+	
+	
+</body>
+	
+	
