@@ -59,6 +59,7 @@
 			display:none;
 			color: black;
 			cursor: default;
+			z-index: 100;
 		}
 
 		.fermer
@@ -176,13 +177,7 @@
 					
 					- amélioration tour et ordi portable<br>
 					- diagnostic et réparation: tour, ordi portable, imprimante, téléphone, etc<br>
-					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">exemple
 					
-						<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
-							<iframe src="https://drive.google.com/file/d/127JKBjPISRNqNOGyoAZZdd2gXjWc8b9M/preview" width="480" height="360"></iframe><br>
-							Photos prise durant le diagnostic d'une carte mère ne réagissant plus au signal PG.<br>
-						</div>	
-					</div><br>
 					- sélection et assemblage des composants de tour d'ordinateur<br>
 				</div>
 				</div><br>
@@ -292,7 +287,7 @@
 					<div class="image" onclick="event.stopPropagation()" style="margin-left: 10px;">
 						<iframe src="https://drive.google.com/file/d/1iDrKa3Dx8JveOfi0K3xlI1tx8SGck2gD/preview" width="480" height="360"></iframe><br>
 						Voici une image de la conception pour un ami d'un mécanisme visant à incrémenter une roue avec un levier et multiplier par 3,35 l'angle de rotation, mais contrairement à n'importe quel cliquet celui-ci marche dans les deux sens,<br>
-						<iframe src="https://drive.google.com/file/d/1Yk1kMKDKHvR2zBgUQhN6ty1Mt4Ae1UpE/preview" width="480" height="360"></iframe><br>
+						<iframe src="https://drive.google.com/file/d/1Yk1kMKDKHvR2zBgUQhN6ty1Mt4Ae1UpE/preview" width="480" height="270"></iframe><br>
 						et en voici un prototype plastique pour confirmer qu'il fonctionne bel et bien dans la réalité et pas seulement dans ma tête.<br>
 						<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
 					</div>	
@@ -318,7 +313,7 @@
 					compatibilité logiciel et drivers<br>
 					logiciel indésirable<br>
 					problème de performance<br>
-					mauvaise configuration d'os<em>(Windows NT)</em> BIOS/UEFI ou logiciel<br>
+					mauvaise configuration d'os<em>(Windows NT)</em> BIOS/UEFI logiciel<br>
 					exetera<br>
 				</div>
 			</div><br>
@@ -326,7 +321,7 @@
 			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- Administration</strong><br>
 				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
 					- installation d'os adapté à l'utilisation<br>
-					- rechercher et installation de driver spécifique<br>
+					- recherche et installation de driver spécifique<br>
 					- configuration diverses<br>
 					- ouverture et gestion de serveur IIS NAS ou autre<br>
 					- installation de logiciel<br>
@@ -404,7 +399,7 @@
 					</div><br> 
 					
 					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- modèle 3D
-						<div  class="pluslonginfo" style="margin-left: 25px; margin-bottom: -5px;">
+						<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
 						<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- modélisation
 					
 							<div class="image" onclick="event.stopPropagation()" style="margin-left:-15px;">
@@ -434,7 +429,8 @@
 						</div>
 					</div><br>
 					
-					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- texture
+					- texture
+					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">
 					
 						<div class="image" onclick="event.stopPropagation()" style="margin-left: -15px;">
 							<iframe src="/preview" width="480" height="360"></iframe><br>
@@ -444,16 +440,8 @@
 					</div><br>
 					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- physique
 						<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
-						<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- rigidbody
+						- rigidbody<br>
 						
-							<div class="image" onclick="event.stopPropagation()" style="margin-left:-15px;">
-								<div style="overflow:hidden; width:480px; height:480px; border: 2px solid gray;">
-									<iframe src="/preview" width="800" height="640" style="margin-left:-160px; margin-top:-100px;"></iframe><br>
-									<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
-								</div>
-								.
-							</div>
-						</div><br>
 						
 						<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- softbody
 						
@@ -462,7 +450,7 @@
 									<iframe src="https://drive.google.com/file/d/1B4ZB1cERWLf7ZIQOo99hVd2xGUp0miKN/preview" width="800" height="640" style="margin-left:-160px; margin-top:-100px;"></iframe><br>
 									<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert')">X</div>
 								</div>
-								Gif de démonstration de la déformation plastique et inertie d'un pneus avec un moteur physique de softbody de ma création.
+								Gif de démonstration de la déformation plastique et inertie d'un pneus avec un moteur physique de softbody que j'ai créé.
 							</div>
 						</div><br>
 						
@@ -474,15 +462,15 @@
 			</div><br>
 			
 			<div class="deroul" onclick="this.classList.toggle('ouvert');"><strong>- Modding</strong><br>
-				<div  class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
+				<div  class="pluslonginfo" style="margin-left: 25px; margin-bottom: -5px;">
 					
 					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- modification d'os <em>(Windows NT)</em>
 						<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
-						- extension d'API<br>
 						- modification de registre<br>
 						- custom imageres.dll<br>
 						- autounattend<br>
 						- modification d'ISO<br>
+						- extension d'API<br>
 						- exetera<br>
 						
 						</div>
@@ -491,8 +479,8 @@
 					
 					<div class="deroul" onclick="this.parentElement.parentElement.classList.remove('ouvert'); this.classList.toggle('ouvert');">- modification de logiciel
 						<div class="plusinfo" style="margin-left: 25px; margin-bottom: -5px;">
-						- ajout de compatibilité os ou driver<br>
 						- création de mod ou extension<br>
+						- ajout de compatibilité os ou driver<br>
 						- modification du logiciel en lui-même<br>
 						- exetera<br>
 						
@@ -564,7 +552,7 @@
 							<iframe src="https://drive.google.com/file/d/1pZkEHXlja3c3danglJAFl5_lE6g9edgk/preview" width="480" height="360"></iframe><br>
 							voici le résultat la première fois que j'ai essayé de graver de l'écriture sur un grain de riz,<br>
 							je tiens à préciser que de par la taille et translucidité du grain de riz
-							lorsque je tenais entre mes doigts je ne voyais pas vraiment ce que je faisais,
+							lorsque je le tenais entre mes doigts je ne voyais pas vraiment ce que je faisais,
 							mais malgré ça c'est pas moins bien écrit qu'à taille normale.<br>
 							<div class="fermer" onclick="this.closest('.deroul').classList.remove('ouvert');">X</div>
 						</div>	
@@ -604,7 +592,8 @@
 	
 			- 25ans <em>(née le 20 juin 2001)</em><br>
 			
-			- 15ans d'expérience dans la fabrication et réparation d'à peu près tout<br>
+			- 15ans d'expérience dans la fabrication et<br>
+			réparation d'à peu près tout<br>
 	
 	
 	
